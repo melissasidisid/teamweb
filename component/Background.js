@@ -1,7 +1,6 @@
 import Head from "next/head";
 import "bootstrap/dist/css/bootstrap.css";
 import Image from "next/image";
-import style from "../src/app/Background.module.css";
 
 export default function Home() {
   return (
@@ -15,60 +14,63 @@ export default function Home() {
         />
       </Head>
       <div
-        id="carouselExample"
-        class="carousel slide"
-        style={{ justifyContent: "center" }}
+        class="p-3 mb-2 bg-secondary  text-white"
+        style={{ height: "100vh" }}
       >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <Image
-              className="object-fit-contain border rounded"
-              height={"100"}
-              src="/im.png"
-              width={500}
-              alt="cette photo"
-              layout="responsive"
-            />
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          style={{ justifyContent: "center" }}
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <Image
+                height={"100"}
+                src="/im.png"
+                width={500}
+                alt="cette photo"
+                layout="responsive"
+              />
+            </div>
+            <div class="carousel-item">
+              <Image
+                src="/Img.png"
+                width={500}
+                height={500}
+                alt="cette photo"
+                layout="responsive"
+                class="figure-img img-fluid rounded"
+              />
+            </div>
+            <div class="carousel-item">
+              <Image
+                src="/image N1.png"
+                width={500}
+                height={500}
+                alt="cette photo"
+                layout="responsive"
+              />
+            </div>
           </div>
-          <div class="carousel-item">
-            <Image
-              className="styles.Image"
-              src="/Img.png"
-              width={500}
-              height={500}
-              alt="cette photo"
-              layout="responsive"
-              class="figure-img img-fluid rounded"
-            />
-          </div>
-          <div class="carousel-item">
-            <Image
-              src="/image N1.png"
-              width={500}
-              height={500}
-              alt="cette photo"
-              layout="responsive"
-            />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
   );

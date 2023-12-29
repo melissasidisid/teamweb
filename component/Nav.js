@@ -15,9 +15,10 @@ export default function Home() {
           top: "50%",
         }}
       >
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown bg-transparent">
           <a
-            class="nav-link dropdown-toggle text-dark"
+            class="nav-link dropdown-toggle text-dark "
+            style={{ fontWeight: "bold" }}
             data-bs-toggle="dropdown"
             href="#"
             role="button"
@@ -32,12 +33,12 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" style={{ fontWeight: "bold" }}>
                 Another action
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" style={{ fontWeight: "bold" }}>
                 Something else here
               </a>
             </li>
@@ -45,7 +46,7 @@ export default function Home() {
               <hr class="dropdown-divider" />
             </li>
             <li>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="#" style={{ fontWeight: "bold" }}>
                 Separated link
               </a>
             </li>
@@ -58,6 +59,7 @@ export default function Home() {
             href="#"
             role="button"
             aria-expanded="false"
+            style={{ fontWeight: "bold" }}
           >
             diploma
           </a>
@@ -94,6 +96,7 @@ export default function Home() {
             href="#"
             role="button"
             aria-expanded="false"
+            style={{ fontWeight: "bold" }}
           >
             product
           </a>
@@ -130,6 +133,7 @@ export default function Home() {
             href="#"
             role="button"
             aria-expanded="false"
+            style={{ fontWeight: "bold" }}
           >
             know more
           </a>
